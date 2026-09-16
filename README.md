@@ -1,16 +1,19 @@
 # Python OOP Bank Account
 
-A beginner-friendly Python OOP project to practice classes, objects, attributes, and methods.
+A beginner-friendly Python OOP project to practice classes, objects, attributes, and methods step by step.
 
-## Version 1
+## Version 2 - Transaction History
 
-This program creates a simple bank account where a user can:
+Version 1 included a simple bank account with deposit, withdrawal, and balance display. Version 2 adds a basic transaction history while keeping the project beginner-friendly.
+
+### What the program can do
 
 - Store an account holder name
-- Store a starting balance
+- Store and display the current balance
 - Deposit money
 - Withdraw money when enough balance is available
-- Display the current balance
+- Save successful deposits and withdrawals in a transaction list
+- Display transaction history
 
 ## Concepts Practiced
 
@@ -20,7 +23,10 @@ This program creates a simple bank account where a user can:
 - Object creation
 - Attributes
 - Methods
+- Lists inside a class
+- `append()`
 - `if/else`
+- `for` loop
 - Basic formatted output
 
 ## Example Flow
@@ -30,6 +36,13 @@ Deposit: ₹500
 Withdraw: ₹300  
 Final balance: ₹1200
 
+Transaction history:
+
+- Deposited ₹500
+- Withdrew ₹300
+
 ## Learning Progress
 
-This is intentionally a basic Version 1 project. Later versions can gradually add transaction history, multiple accounts, and file handling.
+This is Version 2 of the project. The project is being improved gradually rather than adding advanced OOP concepts all at once.
+
+Future versions can add simple input validation, multiple accounts, or file handling after the current concepts are comfortable.
