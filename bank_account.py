@@ -1,4 +1,4 @@
-# Python OOP Bank Account System - Version 2
+# Python OOP Bank Account System - Version 3
 
 class BankAccount:
     def __init__(self, account_holder, balance):
@@ -7,12 +7,17 @@ class BankAccount:
         self.transactions = []
 
     def deposit(self, amount):
-        self.balance += amount
-        self.transactions.append(f"Deposited ₹{amount:.2f}")
-        print(f"₹{amount:.2f} deposited successfully.")
+        if amount > 0:
+            self.balance += amount
+            self.transactions.append(f"Deposited ₹{amount:.2f}")
+            print(f"₹{amount:.2f} deposited successfully.")
+        else:
+            print("Please enter a valid amount.")
 
     def withdraw(self, amount):
-        if amount <= self.balance:
+        if amount <= 0:
+            print("Please enter a valid amount.")
+        elif amount <= self.balance:
             self.balance -= amount
             self.transactions.append(f"Withdrew ₹{amount:.2f}")
             print(f"₹{amount:.2f} withdrawn successfully.")
@@ -38,6 +43,10 @@ account.show_balance()
 
 account.deposit(500)
 account.withdraw(300)
+
+# Version 3 validation examples
+account.deposit(-500)
+account.withdraw(0)
 
 account.show_balance()
 account.show_transactions()
