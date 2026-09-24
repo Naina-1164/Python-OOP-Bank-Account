@@ -1,48 +1,32 @@
 # Python OOP Bank Account
 
-A beginner-friendly Python OOP project to practice classes, objects, attributes, and methods step by step.
+A beginner-friendly Python OOP project improved step by step.
 
-## Version 2 - Transaction History
+## Version 3 - Basic Amount Validation
 
-Version 1 included a simple bank account with deposit, withdrawal, and balance display. Version 2 adds a basic transaction history while keeping the project beginner-friendly.
+Version 3 adds simple validation so zero or negative deposits and withdrawals are rejected.
 
-### What the program can do
+### Current Features
 
-- Store an account holder name
-- Store and display the current balance
-- Deposit money
-- Withdraw money when enough balance is available
-- Save successful deposits and withdrawals in a transaction list
+- Store account holder and balance
+- Deposit and withdraw money
+- Check for sufficient balance
+- Save successful transactions
 - Display transaction history
+- Reject zero or negative amounts
 
 ## Concepts Practiced
 
-- `class`
-- `__init__()`
-- `self`
-- Object creation
-- Attributes
-- Methods
+- Classes, objects, attributes, and methods
 - Lists inside a class
-- `append()`
-- `if/else`
-- `for` loop
-- Basic formatted output
-
-## Example Flow
-
-Starting balance: ₹1000  
-Deposit: ₹500  
-Withdraw: ₹300  
-Final balance: ₹1200
-
-Transaction history:
-
-- Deposited ₹500
-- Withdrew ₹300
+- Nested `if/elif/else`
+- Comparison operators
+- Basic input validation
 
 ## Learning Progress
 
-This is Version 2 of the project. The project is being improved gradually rather than adding advanced OOP concepts all at once.
+**Version 1:** Basic bank account class  
+**Version 2:** Transaction history  
+**Version 3:** Positive-amount validation
 
-Future versions can add simple input validation, multiple accounts, or file handling after the current concepts are comfortable.
+The project remains beginner-friendly. Multiple accounts, inheritance, databases, and advanced OOP are intentionally left for later versions.
