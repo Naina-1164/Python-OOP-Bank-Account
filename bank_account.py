@@ -1,4 +1,4 @@
-# Python OOP Bank Account System - Version 3
+# Python OOP Bank Account System - Version 4
 
 class BankAccount:
     def __init__(self, account_holder, balance):
@@ -41,12 +41,12 @@ account = BankAccount("Naina", 1000)
 print(f"Account Holder: {account.account_holder}")
 account.show_balance()
 
-account.deposit(500)
-account.withdraw(300)
+# Version 4: Take transaction amounts from the user
+deposit_amount = float(input("Enter deposit amount: ₹"))
+account.deposit(deposit_amount)
 
-# Version 3 validation examples
-account.deposit(-500)
-account.withdraw(0)
+withdraw_amount = float(input("Enter withdrawal amount: ₹"))
+account.withdraw(withdraw_amount)
 
 account.show_balance()
 account.show_transactions()
