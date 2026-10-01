@@ -2,46 +2,48 @@
 
 A beginner-friendly Python OOP project improved step by step.
 
-## Version 4 - User Input for Transactions
+## Version 5 - Simple Menu System
 
-Version 4 replaces hard-coded deposit and withdrawal amounts with values entered by the user. The amount validation from Version 3 is reused.
+Version 5 turns the existing bank account program into a simple menu-driven program. The user can repeatedly choose an action until selecting Exit.
+
+### Menu
+
+```text
+--- Bank Menu ---
+1. Deposit
+2. Withdraw
+3. Show Balance
+4. Show Transactions
+5. Exit
+```
 
 ### Current Features
 
 - Store account holder and balance
-- Take a deposit amount from the user
-- Take a withdrawal amount from the user
+- Deposit and withdraw using user input
 - Reject zero or negative transaction amounts
 - Check for sufficient balance
-- Save successful transactions
-- Display current balance and transaction history
+- Save successful transaction history
+- Display current balance
+- Display transaction history
+- Repeatedly choose actions from a simple menu
+- Exit the program with option 5
 
-## Concepts Practiced
+## New Concepts Practiced
 
-- Classes, objects, attributes, and methods
-- `input()`
-- `float()`
-- Calling object methods with user-entered values
-- Reusing existing validation
-- Lists and transaction history
-
-## Example Flow
-
-```text
-Account Holder: Naina
-Current balance: ₹1000.00
-Enter deposit amount: ₹500
-Enter withdrawal amount: ₹300
-Current balance: ₹1200.00
-```
-
-Try the program again with `-100` or `0` to see the Version 3 validation work.
+- `while True` loop
+- `if / elif / else`
+- `break`
+- Menu-driven program flow
+- Calling existing object methods based on user choice
+- Reusing earlier validation and transaction-history logic
 
 ## Learning Progress
 
 **Version 1:** Basic bank account class  
 **Version 2:** Transaction history  
 **Version 3:** Positive-amount validation  
-**Version 4:** User input for transactions
+**Version 4:** User input for transactions  
+**Version 5:** Simple menu system
 
-A menu system, exception handling, multiple accounts, inheritance, file saving, and databases are intentionally left for later versions.
+Exception handling, multiple accounts, inheritance, file saving, GUI, and databases are intentionally left for later versions so the project continues to show gradual learning progress.
