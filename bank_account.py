@@ -1,4 +1,4 @@
-# Python OOP Bank Account System - Version 4
+# Python OOP Bank Account System - Version 5
 
 class BankAccount:
     def __init__(self, account_holder, balance):
@@ -41,12 +41,34 @@ account = BankAccount("Naina", 1000)
 print(f"Account Holder: {account.account_holder}")
 account.show_balance()
 
-# Version 4: Take transaction amounts from the user
-deposit_amount = float(input("Enter deposit amount: ₹"))
-account.deposit(deposit_amount)
+# Version 5: Simple menu system
+while True:
+    print("\n--- Bank Menu ---")
+    print("1. Deposit")
+    print("2. Withdraw")
+    print("3. Show Balance")
+    print("4. Show Transactions")
+    print("5. Exit")
 
-withdraw_amount = float(input("Enter withdrawal amount: ₹"))
-account.withdraw(withdraw_amount)
+    choice = input("Enter your choice: ")
 
-account.show_balance()
-account.show_transactions()
+    if choice == "1":
+        deposit_amount = float(input("Enter deposit amount: ₹"))
+        account.deposit(deposit_amount)
+
+    elif choice == "2":
+        withdraw_amount = float(input("Enter withdrawal amount: ₹"))
+        account.withdraw(withdraw_amount)
+
+    elif choice == "3":
+        account.show_balance()
+
+    elif choice == "4":
+        account.show_transactions()
+
+    elif choice == "5":
+        print("Thank you for using the Bank Account System.")
+        break
+
+    else:
+        print("Please choose a valid option from 1 to 5.")
