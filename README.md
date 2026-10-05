@@ -2,41 +2,29 @@
 
 A beginner-friendly Python OOP project improved step by step.
 
-## Version 5 - Simple Menu System
+## Version 6 - Basic Input Error Handling
 
-Version 5 turns the existing bank account program into a simple menu-driven program. The user can repeatedly choose an action until selecting Exit.
+Version 6 keeps the simple menu from Version 5 and adds beginner-friendly `try/except` handling for deposit and withdrawal input.
 
-### Menu
-
-```text
---- Bank Menu ---
-1. Deposit
-2. Withdraw
-3. Show Balance
-4. Show Transactions
-5. Exit
-```
+If the user types text such as `abc` instead of a number, the program now shows a helpful message instead of stopping with a `ValueError`.
 
 ### Current Features
 
 - Store account holder and balance
-- Deposit and withdraw using user input
-- Reject zero or negative transaction amounts
-- Check for sufficient balance
-- Save successful transaction history
-- Display current balance
-- Display transaction history
-- Repeatedly choose actions from a simple menu
-- Exit the program with option 5
+- Menu-driven deposit and withdrawal
+- Positive-amount validation
+- Sufficient-balance check
+- Transaction history
+- Balance display
+- Basic handling of non-numeric transaction input
 
 ## New Concepts Practiced
 
-- `while True` loop
-- `if / elif / else`
-- `break`
-- Menu-driven program flow
-- Calling existing object methods based on user choice
-- Reusing earlier validation and transaction-history logic
+- `try`
+- `except ValueError`
+- Protecting `float(input())`
+- Keeping a menu running after invalid input
+- Reusing existing OOP methods and validation
 
 ## Learning Progress
 
@@ -44,6 +32,7 @@ Version 5 turns the existing bank account program into a simple menu-driven prog
 **Version 2:** Transaction history  
 **Version 3:** Positive-amount validation  
 **Version 4:** User input for transactions  
-**Version 5:** Simple menu system
+**Version 5:** Simple menu system  
+**Version 6:** Basic input error handling
 
-Exception handling, multiple accounts, inheritance, file saving, GUI, and databases are intentionally left for later versions so the project continues to show gradual learning progress.
+Multiple accounts, inheritance, file saving, GUI, and databases are intentionally left for later versions.
