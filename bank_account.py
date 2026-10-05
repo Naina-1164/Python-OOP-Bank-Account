@@ -1,4 +1,4 @@
-# Python OOP Bank Account System - Version 5
+# Python OOP Bank Account System - Version 6
 
 class BankAccount:
     def __init__(self, account_holder, balance):
@@ -41,7 +41,7 @@ account = BankAccount("Naina", 1000)
 print(f"Account Holder: {account.account_holder}")
 account.show_balance()
 
-# Version 5: Simple menu system
+# Version 6: Menu with basic input error handling
 while True:
     print("\n--- Bank Menu ---")
     print("1. Deposit")
@@ -53,12 +53,18 @@ while True:
     choice = input("Enter your choice: ")
 
     if choice == "1":
-        deposit_amount = float(input("Enter deposit amount: ₹"))
-        account.deposit(deposit_amount)
+        try:
+            deposit_amount = float(input("Enter deposit amount: ₹"))
+            account.deposit(deposit_amount)
+        except ValueError:
+            print("Please enter a number for the deposit amount.")
 
     elif choice == "2":
-        withdraw_amount = float(input("Enter withdrawal amount: ₹"))
-        account.withdraw(withdraw_amount)
+        try:
+            withdraw_amount = float(input("Enter withdrawal amount: ₹"))
+            account.withdraw(withdraw_amount)
+        except ValueError:
+            print("Please enter a number for the withdrawal amount.")
 
     elif choice == "3":
         account.show_balance()
